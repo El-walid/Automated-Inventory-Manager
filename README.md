@@ -7,7 +7,7 @@
 ## 📋 Overview
 This project is a **Smart Supply Chain Automation** tool designed for SMEs to eliminate manual monitoring.
 
-The system acts as a **"Digital Supervisor"**: it analyzes stock levels via **Pandas**, generates professional **XlsxWriter** reports, and—most importantly—uses the **Telegram Bot API** to send real-time alerts to managers when stock reaches critical levels.
+The system acts as a **"Digital Supervisor"**: it analyzes stock levels via **Pandas**, generates professional **XlsxWriter** reports, and most importantly uses the **Telegram Bot API** to send real-time alerts to managers when stock reaches critical levels.
 
 ## 🚀 Key Features
 * **📱 Real-Time Telegram Alerts:** Integrates with the Telegram Bot API to push instant notifications for "CRITICAL" stock levels directly to mobile devices.
