@@ -110,5 +110,7 @@ It is configured via **Windows Task Scheduler** to execute automatically on syst
 
 **El Walid El Alaoui Fels**
 *Data Engineer | Microsoft Azure & SQL Specialist*
+
 [LinkedIn Profile](https://www.linkedin.com/in/el-walid-el-alaoui-fels-51491538b/)
+
 [Upwork](https://www.linkedin.com/in/el-walid-el-alaoui-fels-51491538b/)
