@@ -40,7 +40,6 @@ git clone [https://github.com/afwalid37-art/Automated-Inventory-Manager.git](htt
 cd Automated-Inventory-Manager
 
 
-
 ### 2. Install Dependencies
 
 bash
