@@ -10,7 +10,7 @@ data = {
     "Designation": [random.choice(["Chaise", "Table", "Tapis", "Lampe", "Fauteuil"]) + f" Modèle {i}" for i in range(1, 51)],
     "Categorie": [random.choice(categories) for _ in range(50)],
     "Fournisseur": [random.choice(fournisseurs) for _ in range(50)],
-    "Stock_Actuel": [random.randint(0, 40) for _ in range(50)], # 0 = Rupture
+    "Stock_Actuel": [random.randint(0, 40) for _ in range(50)], 
     "Stock_Min_Securite": [10 for _ in range(50)],
     "Stock_Max_Cible": [50 for _ in range(50)],
     "Prix_Achat_Unitaire": [random.randint(50, 1500) for _ in range(50)],
@@ -18,5 +18,5 @@ data = {
 }
 
 df = pd.DataFrame(data)
-df.to_excel("Inventaire_Maroc.xlsx", index=False)
+df.to_excel("Inventaire_Maroc" + str(random.randint(0, 100)) + ".xlsx", index=False)
 print("✅ Fichier 'Inventaire_Maroc.xlsx' créé avec succès.")

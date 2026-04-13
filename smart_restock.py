@@ -99,7 +99,7 @@ with pd.ExcelWriter(fichier_sortie, engine='xlsxwriter') as writer:
     })
     
     # Colonne Argent (DH)
-    style_argent = workbook.add_format({'num_format': '#,##0 "DH"', 'border': 1})
+    style_argent = workbook.add_format({'num_format': '# ##0.00 "DH"', 'border': 1})
     
     # Style Alerte Rouge (Pour "CRITIQUE")
     style_rouge = workbook.add_format({'bg_color': '#FFC7CE', 'font_color': '#9C0006', 'bold': True, 'border': 1})
