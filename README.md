@@ -100,4 +100,3 @@ To make the script run completely hands-free, especially if hosted within a WSL 
 *Data Engineer | Microsoft Stack & Automation Specialist*
 
 [LinkedIn Profile](https://www.linkedin.com/in/el-walid-el-alaoui-fels-51491538b/) | [Upwork](https://www.linkedin.com/in/el-walid-el-alaoui-fels-51491538b/)
-```
