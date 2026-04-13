@@ -32,7 +32,7 @@ The system acts as a **"Digital Supervisor"**: it analyzes stock levels via **Pa
 | `.env.example` | Template for configuring your API keys safely. |
 | `requirements.txt` | List of dependencies. |
 
-
+```mermaid
 graph TD
     A[Windows Task Scheduler] -->|Triggers on Startup| B(run_inventory.py)
     B -->|Executes in WSL/Windows| C{smart_restock.py}
@@ -52,7 +52,7 @@ graph TD
     class B,C script;
     class D,G data;
     class E,F api;
-
+```
 
 
 ## ⚙️ Setup & Installation
