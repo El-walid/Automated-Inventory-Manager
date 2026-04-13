@@ -32,6 +32,29 @@ The system acts as a **"Digital Supervisor"**: it analyzes stock levels via **Pa
 | `.env.example` | Template for configuring your API keys safely. |
 | `requirements.txt` | List of dependencies. |
 
+
+graph TD
+    A[Windows Task Scheduler] -->|Triggers on Startup| B(run_inventory.py)
+    B -->|Executes in WSL/Windows| C{smart_restock.py}
+    
+    C -->|Reads Current Stock| D[(Inventaire_Maroc.xlsx)]
+    C -->|Pandas Analysis| C
+    
+    C -->|If Stock is CRITICAL| E[Telegram API]
+    E -->|Push Notification| F((Manager's Phone))
+    
+    C -->|Generates Report| G[Bon_Commande.xlsx]
+    
+    classDef script fill:#1F497D,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef data fill:#238636,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef api fill:#26A5E4,stroke:#fff,stroke-width:2px,color:#fff;
+    
+    class B,C script;
+    class D,G data;
+    class E,F api;
+
+
+
 ## ⚙️ Setup & Installation
 
 ### 1. Clone the Repository
